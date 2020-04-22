@@ -1,0 +1,90 @@
+﻿@model VB_PROJECTS_NOTES.Models.Project
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Project</h4>
+    <hr />
+
+    <div class="my-3 p-3 bg-white rounded shadow-sm">
+        <h4 class="border-bottom border-gray pb-2 mb-0">@Html.DisplayFor(model => model.Name)</h4>
+
+        <div class="media text-muted pt-3">
+            <p class="media-body pb-3 mb-0 lh-125 border-bottom border-gray small-custom">
+                <strong class="d-block text-gray-dark">Country</strong>
+                <span>@Html.DisplayFor(model => model.Country.Name)</span>
+            </p>
+        </div>
+
+        <div class="media text-muted pt-3">
+            <p class="media-body pb-3 mb-0 small-custom lh-125 border-bottom border-gray">
+                <strong class="d-block text-gray-dark">Description</strong>
+                <span>@Html.DisplayFor(model => model.Description)</span>
+            </p>
+        </div>
+
+        <div class="media text-muted pt-3">
+            <p class="media-body pb-3 mb-0 small-custom lh-125 border-bottom border-gray">
+                <strong class="d-block text-gray-dark">Jenkins Address</strong>
+                <a href="@Html.DisplayFor(model => model.JenkisAddress)" target="_blank"><span>@Html.DisplayFor(model => model.JenkisAddress)</span></a>
+            </p>
+        </div>
+
+        <div class="media text-muted pt-3">
+            <p class="media-body pb-3 mb-0 small-custom lh-125 border-bottom border-gray">
+                <strong class="d-block text-gray-dark">Backend GitLab Address</strong>
+                <a href="@Html.DisplayFor(model => model.GitAddress)" target="_blank"><span>@Html.DisplayFor(model => model.GitAddress)</span></a>
+            </p>
+        </div>
+
+        <div class="media text-muted pt-3">
+            <p class="media-body pb-3 mb-0 small-custom lh-125 border-bottom border-gray">
+                <strong class="d-block text-gray-dark">Provison Git Address (IT OPs)</strong>
+                <a href="@Html.DisplayFor(model => model.ProvisionGitAddress)" target="_blank"><span>@Html.DisplayFor(model => model.ProvisionGitAddress)</span></a>
+            </p>
+        </div>
+
+
+        <div class="media text-muted pt-3">
+            <p class="media-body pb-3 mb-0 small-custom lh-125 border-bottom border-gray">
+                <strong class="d-block text-gray-dark">Nexus Package Frontend</strong>
+                <a href="@Html.DisplayFor(model => model.NexusFrontEndAddress)" target="_blank"><span>@Html.DisplayFor(model => model.NexusFrontEndAddress)</span></a>
+            </p>
+        </div>
+
+        <div class="media text-muted pt-3">
+            <p class="media-body pb-3 mb-0 small-customlh-125 border-bottom border-gray">
+                <strong class="d-block text-gray-dark">Nexus Package NG Product</strong>
+                <a href="@Html.DisplayFor(model => model.NexusProductAddress)" target="_blank"><span>@Html.DisplayFor(model => model.NexusProductAddress)</span></a>
+            </p>
+        </div>
+
+        <div class="media text-muted pt-3">
+            <p class="media-body pb-3 mb-0 small-custom lh-125 border-bottom border-gray">
+                <strong class="d-block text-gray-dark">Nexus Package Biometric Product</strong>
+                <a href="@Html.DisplayFor(model => model.BiometricProductAddress)" target="_blank"><span>@Html.DisplayFor(model => model.BiometricProductAddress)</span></a>
+            </p>
+        </div>
+
+        <div class="media text-muted pt-3">
+            <p class="media-body pb-3 mb-0 small-custom lh-125 border-bottom border-gray">
+                <strong class="d-block text-gray-dark">Notes</strong>
+                <span>@Html.DisplayFor(model => model.Notes)</span>
+            </p>
+        </div>
+
+        <small class="d-block text-right mt-3">
+            <span style="color: #6c757d!important;">Project Details</span>
+        </small>
+    </div>
+
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

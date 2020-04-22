@@ -1,0 +1,54 @@
+﻿@model VB_PROJECTS_NOTES.Models.Country
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Country</h4>
+    <hr />
+
+    @*<dl class="row">
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Region)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Region.Id)
+            </dd>
+        </dl>*@
+
+    <div class="my-3 p-3 bg-white rounded shadow-sm">
+        <h4 class="border-bottom border-gray pb-2 mb-0">@Html.DisplayFor(model => model.Name)</h4>
+
+        @*<div class="media text-muted pt-3">
+            <p class="media-body pb-3 mb-0 lh-125 border-bottom border-gray small-custom">
+                <strong class="d-block text-gray-dark">Country Name</strong>
+                <span>@Html.DisplayFor(model => model.Name)</span>
+            </p>
+        </div>*@
+
+        <div class="media text-muted pt-3">
+            <p class="media-body pb-3 mb-0 small-custom lh-125 border-bottom border-gray">
+                <strong class="d-block text-gray-dark">Region</strong>
+                <span>@Html.DisplayFor(model => model.Region.Name)</span>
+            </p>
+        </div>
+
+        <small class="d-block text-right mt-3">
+            <span style="color: #6c757d!important;">Country Details</span>
+        </small>
+    </div>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
