@@ -1,33 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marcus.campos\\source\\repos\\VB-PROJECTS-NOTES\\VB-PROJECTS-NOTES\\VB-PROJECTS-NOTES.csproj": {}
+    "Q:\\DEVELOPMENT\\GIT PROJECTS\\VB-PROJECTS-NOTES\\VB-PROJECTS-NOTES\\VB-PROJECTS-NOTES.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marcus.campos\\source\\repos\\VB-PROJECTS-NOTES\\VB-PROJECTS-NOTES\\VB-PROJECTS-NOTES.csproj": {
+    "Q:\\DEVELOPMENT\\GIT PROJECTS\\VB-PROJECTS-NOTES\\VB-PROJECTS-NOTES\\VB-PROJECTS-NOTES.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marcus.campos\\source\\repos\\VB-PROJECTS-NOTES\\VB-PROJECTS-NOTES\\VB-PROJECTS-NOTES.csproj",
+        "projectUniqueName": "Q:\\DEVELOPMENT\\GIT PROJECTS\\VB-PROJECTS-NOTES\\VB-PROJECTS-NOTES\\VB-PROJECTS-NOTES.csproj",
         "projectName": "VB-PROJECTS-NOTES",
-        "projectPath": "C:\\Users\\marcus.campos\\source\\repos\\VB-PROJECTS-NOTES\\VB-PROJECTS-NOTES\\VB-PROJECTS-NOTES.csproj",
-        "packagesPath": "C:\\Users\\marcus.campos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marcus.campos\\source\\repos\\VB-PROJECTS-NOTES\\VB-PROJECTS-NOTES\\obj\\",
+        "projectPath": "Q:\\DEVELOPMENT\\GIT PROJECTS\\VB-PROJECTS-NOTES\\VB-PROJECTS-NOTES\\VB-PROJECTS-NOTES.csproj",
+        "packagesPath": "C:\\Users\\Administrador.PC-QUINTELA\\.nuget\\packages\\",
+        "outputPath": "Q:\\DEVELOPMENT\\GIT PROJECTS\\VB-PROJECTS-NOTES\\VB-PROJECTS-NOTES\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\marcus.campos\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Administrador.PC-QUINTELA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {},
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
@@ -69,6 +73,16 @@
               "target": "Package",
               "version": "[3.0.0, )"
             },
+            "Microsoft.NETCore.Platforms": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0-preview4.19212.13, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.5.4, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.0.0, )"
@@ -85,13 +99,9 @@
               "target": "Package",
               "version": "[4.5.0, )"
             },
-            "X.PagedList": {
-              "target": "Package",
-              "version": "[8.0.5, )"
-            },
             "X.PagedList.Mvc": {
               "target": "Package",
-              "version": "[8.0.5, )"
+              "version": "[7.9.1, )"
             },
             "X.PagedList.Mvc.Core": {
               "target": "Package",
@@ -101,30 +111,23 @@
               "target": "Package",
               "version": "[4.4.1, )"
             },
+            "runtime.win-x86.Microsoft.NETCore.DotNetAppHost": {
+              "include": "None",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0-preview4-27615-11, )",
+              "autoReferenced": true
+            },
             "uikit": {
               "target": "Package",
               "version": "[2.25.0, )"
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.101\\RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     }
